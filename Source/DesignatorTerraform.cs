@@ -192,6 +192,7 @@ namespace RFF_Code
     public class Designator_Terraform: Designator
     {
         public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Floors;
+        //public override int DraggableDimensions => 2;
 
         public override bool DragDrawMeasurements => true;
 

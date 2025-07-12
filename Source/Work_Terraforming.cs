@@ -288,7 +288,7 @@ namespace RFF_Code
             {
                 return null;
             }
-            if (c is Blueprint && c.ThingCountNeeded(t.def) == 0)
+            if (c is Blueprint && c.TotalMaterialCost().Count == 0)
             {
                 Job job = JobMaker.MakeJob(JobDefOf.PlaceNoCostFrame);
                 job.targetA = (Thing)c;
