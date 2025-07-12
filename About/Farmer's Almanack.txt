@@ -1,0 +1,421 @@
+FERTILE FIELDS: Rimme Farmer's Almanack
+
+
+Fertile Fields provides a wealth of options for modifying terrain, farming, and construction. This guide provides an overview of all the available options as well as some notes about modding Fertile Fields.
+
+
+(1) NEW TERRAINS:
+
+- Rough gravel. Infertile, slow to walk on, and unable to support heavy structures, it is not found in the wild, but is produced by some terraforming options. Terraforming to rough gravel is usually a reliable way to get worthwhile resources out of land terrain.
+
+- Worn-out soil. Produced (sometimes) by regular soil when it's depleted by growing crops on it. Worn soil can be replenished by your colonists with some manual labor, but no resources. Otherwise, it's identical to stony soil.
+
+- Shallow trench. Produced by terraforming into shallow water, trenches are ugly, slow to walk on, infertile, and support only light structures. When adjacent to water, shallow trenches become shallow water. If placed adjacent to a river or ocean, the trench will fill with water of the same type. This allows your colonists to work on shallow water blueprints in any order. Shallow trenches can be terraformed with any transform that works on shallow water.
+
+- Deep trench. Like a shallow trench, but for deep water.
+
+- Muddy trench. Like a shallow trench, but for marsh.
+
+
+(2) TERRAFORMING MENU:
+
+The terraforming menu has two types of designators that allow you to modify terrain.
+
+Multi-terraformers are distinguished by a red question mark in a white stripe. Click and drag the designator across tiles of any terrain type. If your pawns can transform those tiles to the selected terrain, they will be designated for work. If a transformation takes multiple steps, the extra steps will go into a queue to follow the first step.
+
+While hovering over a tile or drag-selecting multiple tiles with a multi-terraformer, the tooltip will show the total cost and/or yield for the proposed action.
+
+Right-click on a multi-terraformer to show single terraformers for each terrain. This allows you to selectively transform terrains, and also view more details on the cost and yield of each transformation.
+
+Many transformations either yield or cost resources. For more information, consult the individual designators in-game or the "Resources" section below. Single terraformers that yield resources have a shovel icon on their designator.
+
+The following transformations can be used by default:
+
+- Rough gravel (or equivalent) to rough gravel, sand, stony soil, soil, or shallow trench
+- Sand (or equivalent) to rough gravel, sand, stony soil, soil, or shallow trench
+- Stony soil (or equivalent) to rough gravel, sand, stony soil, or soil
+- Soil (or equivalent) to rough gravel, sand, stony soil, soil, packed dirt, mud, marshy soil, muddy trench, or shallow trench
+- Packed dirt to soil
+- Marshy soil (or equivalent) to rough gravel, soil, mud, marshy soil, or muddy trench
+- Mud (or equivalent) to rough gravel, soil, mud, marshy soil, or muddy trench
+- Shallow water to muddy trench
+- Marsh to shallow trench
+- Ice to shallow water (on Sea Ice maps) or rough gravel (on other maps)
+
+Some terrains are equivalent to other common terrains:
+
+- Sand: soft sand
+- Soil: lichen-covered soil, worn soil, rich soil, tilled soil
+
+From Nature's Pretty Sweet:
+- Shallow water: hot and cold spring water
+- Soil: wet soil, river deposits
+- Ice: muddy ice
+
+From Tiberium Rim:
+- Sand: decrystalized sand
+- Stony soil: decrystalized soil
+
+From Crashlanding:
+- Sand: wasteland
+
+From CuproPanda's Quarry:
+- Stony soil: reclaimed soil
+
+From Dub's Hygiene:
+- Marshy soil: night soil
+
+From Biomes!:
+- Rough gravel: stone-bearing soils
+
+
+The Terraforming research project unlocks the following terrain transformations:
+
+- Rough or smoothed natural stone to rough gravel
+- Rough gravel to rough stone
+- Shallow water to rough gravel, sand, soil, or deep water
+- Marsh to soil, marshy soil, mud, or deep water
+- Deep water to shallow water
+
+
+(3) FARMING MENU:
+
+The farming menu has a number of terrain transformations and utility objects to help you make the most of your farmland. The terrain transformations in this menu work identically to the ones in the Terraform menu, above.
+
+By default, you can transform soil to rich soil with fertilizer.
+
+The compost bin converts raw compost (and a little bit of wood) into fertilizer (and usually wood). This takes a few days, and the bins are ugly and not very space-efficient. A mod setting allows you to automatically designate replacement bins to be built once they expire.
+
+The compost barrel converts raw compost into fertilizer. It requires power and can be spoiled by extreme temperatures, like a fermenting barrel. The compost barrel requires Electricity technology.
+
+
+The Farming research project unlocks the following terrain transformations:
+
+- Place topsoil on smooth stone or ice, allowing crops to be planted there
+- Fertilize topsoil
+- Till rich soil
+
+
+(4) PRODUCTION:
+
+At a crafting spot, you can:
+- combine clay, sand, and fertilizer into dirt
+- break dirt down into clay and sand (or just clay)
+- grind crushed rock into sand
+- grind sand into clay
+
+At a stonecutter's bench, you can perform the same bills as the crafting spot at higher speed, and can:
+- crush stone chunks or blocks into crushed rock
+
+The rock mill is a new production bench that acts as a powered stonecutter's bench, providing the same bills and increased work speed.
+
+Sand is used to create glass if you have an appropriate mod installed.
+
+Clay can be fired in a smithy to create bricks. Bricks are used to create walls, floors, and most buildings that can be built out of stone.
+
+Organic material can be converted into raw compost at the butcher's table, which can be used to make fertilizer (as described under the Farming section). Raw compost can be made with food (including hay), plant scraps, or rotted mush produced when other organic material rots away. Alternatively, corpses can be converted directly to raw compost at a campfire or crematorium.
+
+The plant scrap generator is similar to the wood-fired generator and generates 1000W from 75 plant scraps per day. It holds up to 200 scraps.
+
+
+(5) GROWING ZONES:
+
+Growing zones have two new options.
+
+"Return to soil" determines what happens to the extraneous bit of plants you harvest in that zone.
+- If checked (default), these excess pieces are worked into the soil to keep it fertile. The growing zone won't generate plant scraps and will deplete less often. (By default, tilled soil depletes half as much, and any other terrain won't deplete at all.) Check this option if you want a minimum of extra work.
+- If unchecked, plants harvested in the zone will generate plant scraps, but have a chance of depleting tilled soil to rich soil, rich soil to regular soil, or regular soil to stony soil. Plants that take longer to grow have a larger chance to deplete soil, and richer soil is more likely to deplete.
+
+"Replace designators" determines what happens when soil is depleted.
+- If checked (default), a designator will be issued to return it to its former quality. However, until this is done, plants can't be sown in that tile.
+- If unchecked, no designator will be issued and the tile can be immediately replanted. However, you will have to manually order the tile to be refertilized.
+
+
+(6) RESOURCES:
+
+Fertile Fields adds a number of new resources. Listed below are the sources and uses for each new resource.
+
+FF resources stack to 200. Fertilizer, plant scraps, raw compost, and rotted mush will deteriorate if left outdoors. Crushed rocks, dirt, sand, and clay can be stored outdoors without penalty. Plant scraps will rot if left unrefrigerated for a prolonged period (2+ months).
+
+
+DIRT sources:
+- transform soil, marshy soil, or mud to rough gravel
+- transform soil to sand, stony soil, marshy soil, or mud
+- combine clay, sand, and fertilizer at the crafting spot or rock mill
+
+DIRT uses:
+- transform any terrain (except packed dirt or other soil) to soil
+- transform mud or marsh to marshy soil
+- transform shallow water to marsh
+- place on smooth stone or ice to form topsoil
+- split into clay and sand at the crafting spot or rock mill
+
+
+CLAY sources:
+- transform stony soil to rocky gravel or sand
+- transform soil to sand
+- transform dry land (soil, sand, mud, marshy soil, or rough gravel) to shallow water or marsh
+- transform marsh or shallow water to deep water
+- break down dirt at the crafting spot or rock mill
+- grind sand at the rock mill
+
+CLAY uses:
+- transform rocky gravel to stony soil
+- transform sand to soil or stony soil
+- combine into dirt at the crafting spot or rock mill
+- fire at the smithy to create bricks
+
+
+SAND sources:
+- transform stony soil or sand to rough gravel
+- transform sand to shallow water
+- break down dirt at the crafting spot or rock mill
+- grind rocks at the rock mill
+
+SAND uses:
+- transform rough gravel to stony soil or sand
+- transform shallow water to sand
+- combine into dirt at the crafting spot or rock mill
+- grind into clay at the rock mill
+- build sandbags
+
+
+ROCK sources:
+- transform natural stone or stony soil into rough gravel
+- transform stony soil or soil to sand
+- transform shallow water or marsh to deep water
+- grind stone chunks or blocks at the rock mill
+
+ROCK uses:
+- transform rough gravel to rough stone or stony soil
+- transform sand to stony soil or soil
+- transform shallow water or marsh to land terrain
+- transform deep water to shallow water
+- grind into sand at the rock mill
+
+
+PLANT SCRAP sources:
+- plants harvested in growing zones with "return to soil" OFF drop plant scraps depending on their yield
+- plants harvested in hydroponics or from the wild drop plant scraps, but half as many
+
+PLANT SCRAP uses:
+- convert to raw compost at the butcher's table
+- feed to animals
+- fuel plant scrap generators for power
+
+
+ROTTED MUSH sources:
+- created when organic material rots away
+
+ROTTED MUSH uses:
+- convert to raw compost at the butcher's table
+
+
+RAW COMPOST sources:
+- create from food (including hay), plant scraps, or rotted mush at the butcher's table
+- create from corpses at the campfire or crematorium
+
+RAW COMPOST uses:
+- convert to fertilizer using a compost bin or compost barrel
+
+
+FERTILIZER sources:
+- create from fertilizer using a compost bin or compost barrel
+
+FERTILIZER uses:
+- transform soil or topsoil into rich soil or topsoil
+- transform topsoil into tilled soil
+- combine into dirt at the crafting spot or rock mill
+
+
+(7) MOD SETTINGS:
+
+- "Automatically return to soil" and "automatically replace depleted tiles" are used as the default values for new growing zones' respective options.
+
+- "Automatically rebuild compost bins" automatically places a blueprint for a new compost bin when one finishes creating fertilizer.
+
+- By default, plants that don't yield anything, such as grass, also don't deplete soil. Check "non-yielding plants deplete soil" to override that, if you want.
+
+- "Smarter plant scrap forbidding" automatically allows plant scraps spawned by your colonists, even when they aren't in your home zone. If you have a very large number of colonists, this may affect your frame rate, so you can disable it here.
+
+- Hard mode disables certain terraforming actions: removing ice terrain on ice sheet or sea ice map, creating mud, marsh, or marshy soil on those maps, or creating or removing deep water on any map. Existing terraforming designations are unaffected.
+
+- "Plant scrap drop rate" is a global modifier on the number of plant scraps that drop, from 0% to 200%.
+
+- "Soil depletion vulnerability" is a global modifier on the odds of soil depleting from harvest, from 0% to 200%.
+
+- For each terrain type that can deplete, you can set the average time to deplete (in growing days; like with plant growing times, these are about half the rate of actual days) and the effect that the return to soil option has on depletion rate.
+
+
+(8) MODDING:
+
+All of the terrain transformations in Fertile Fields are fully available to XML modding. (There is one exception: the "hardmode" flag will always be the hardmode setting provided by FF.)
+
+
+To make your modded terrain affected by FF transformations, simply add one (or more) of the following terrain affordances to it:
+- Rough Stone (includes rough-hewn and smoothed stone)
+- Rocky Dirt (rough gravel)
+- Sand
+- Gravel (stony soil)
+- PackedDirt
+- SoilF (soil, rich soil, tilled soil)
+- SoilRich
+- SoilMarshy
+- Mud
+- Marsh
+- WaterShallow
+- WaterDeep
+- Ice
+- SmoothStone (includes ice)
+- Topsoil
+
+Mod-added stones that automatically generate rough, rough-hewn, and smooth floors will automatically receive the appropriate designations.
+
+
+If you want to create your own transformations, create a ThingDef that inherits from RFF_TerraformBase.
+
+	<ThingDef ParentName="RFF_TerraformBase">
+		<defName> new defName </defName>
+		<label> new transformation </label>
+		<description> description of the transformation </description>
+		<terrainAffordanceNeeded>RoughStone</terrainAffordanceNeeded>
+		<modExtensions>
+			<li Class="RFF_Code.Terraformer">
+				<result>TerrainDef</result>
+
+				<thingResult>ThingDef</thingResult>
+
+				<products>
+					<SandPile>1</SandPile>
+					<RFFClay>1</RFFClay>
+				</products>
+
+				<biomesAllowedOn>
+					<li>BiomeDef</li>
+				</biomeAllowedOn>
+				<biomesDisallowedOn>
+					<li>BiomeDef</li>
+				</biomeDisallowedOn>
+
+				<hardmodeAllows>true</hardmodeAllows>
+
+				<hardmodeBiomesAllowedOn>
+					<li>BiomeDef</li>
+				</hardmodeBiomeAllowedOn>
+				<hardmodeBiomesDisallowedOn>
+					<li>BiomeDef</li>
+				</hardmodeBiomeDisallowedOn>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<researchPrerequisites><li>RFF_Terraforming</li></researchPrerequisites>
+		<costList>
+			<PileofDirt>1</PileofDirt>
+			<CrushedRocks>1</CrushedRocks>
+		</costList>
+		<uiIconPath>Icons/RockyDirt-Stone</uiIconPath>
+	</ThingDef>
+
+(More examples can be found in Defs/Buildings_RFF.xml)
+
+- terrainAffordanceNeeded defines the terrain(s) that the transformation can be applied to. See above for a list of affordances used in FF.
+- workToBuild, costList, and researchPrerequisites work the same way that they do for normal buildings.
+- the RFF_Code.Terraformer mod extension defines the following transform-specific options:
+	- result: the TerrainDef created.
+	- thingResult: the ThingDef created on the specified tile; useful if you want to use a Thing to allow for more complex transformation logic.
+	- products: a list of ThingDefs and quantities that are produced. Unlike ThingResult, these are not guaranteed to be placed in the affected tile and are recommended for resources.
+	- biomesAllowedOn: if provided, the transformation can only be used on these biomes.
+	- biomesDisallowedOn: if provided, the transformation can't be used on these biomes.
+	- hardmodeAllows: if set to "false", FF's hard mode disabled this transformation
+	- hardmodeBiomesAllowedOn / hardmodeBiomesDisallowedOn: like biomesAllowedOn / biomesDisallowedOn, but only when hard mode is enabled
+
+
+If you want to create your own multi-designators, create a RFF_Code.DesignatorDef_Terraform.
+
+	<RFF_Code.DesignationDef_Terraform>
+		<defName> new defName </defName>
+		<label> new multitransform </label>
+		<description> description of the target terrain </description>
+		<texturePath>Icons/Multi-Stone</texturePath>
+		<targetType>Cell</targetType>
+		<target>TerrainDef</target>
+		<paths>
+			<li>
+				<origin>RockyDirt</origin>
+				<steps>
+					<li>Terraform_RockyDirt-Stone</li>
+				</steps>
+			</li>
+			<li>
+				<origin>Sand</origin>
+				<steps>
+					<li>Terraform_Sand-RockyDirt</li>
+					<li>Terraform_RockyDirt-Stone</li>
+				</steps>
+			</li>
+			<!-- ... more paths here ... -->
+		</paths>
+		<modExtensions>
+			<li Class="RFF_Code.DesignationCategoryExtension">
+				<group>SubCategory_RichTopsoil</group>
+			</li>
+		</modExtensions>
+	</RFF_Code.DesignationDef_Terraform>
+
+(More examples can be found in Defs/DesignationCategories_RFF.xml)
+
+- target is the TerrainDef your designation is intended to create. This prevents it from affecting tiles that are already that terrain.
+- paths are the meat of the designator. You will need one path for each base terrain.
+	- origin is the TerrainAffordanceDef this path applies to.
+	- steps are the ThingDefs of the terraformers for each path. A path can have any number of steps.
+- the mod extension allows this designator to be included in a dropdown submenu.
+
+Note 1: The designator will automatically account for any research prerequisites, allowed/disallowed biomes, or hardmode settings in each step. You can have multiple paths for a given origin; the designator will use the first allowed path in the list.
+
+Note 2: However, designators can't actually determine that the terraformers connect to each other, or have the right starting or ending points. Take care when building paths that they make sense.
+
+
+If you want to create terrain that reacts to adjacent water, create a TerrainDef with a RFF_Code.TerraformTrench mod extension.
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>TrenchShallow</defName>
+		<label>shallow trench</label>
+		<!-- all of the usual terrain tags, e.g., texture, color, stats, fertility... -->
+		<modExtensions>
+			<li Class="RFF_Code.TerraformTrench">
+				<riverTerrain>WaterMovingShallow</riverTerrain>
+				<oceanTerrain>WaterOceanShallow</oceanTerrain>
+				<lakeTerrain>WaterShallow</lakeTerrain>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+
+(More examples can be found in Defs/Terrain_RFF.xml)
+
+The terrain transformed into depends on whether the encountered water is a river, ocean, or other surface water. Rivers will take priority over oceans, and oceans over other water.
+
+
+If you want to create terrain that can deplete when plants are grown on it, create a TerrainDef with a RFF_Code.DepletableSoil mod extension.
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SoilTilled</defName>
+		<label>tilled soil</label>
+		<!-- all of the usual terrain tags, e.g., texture, color, stats, fertility... -->
+		<modExtensions>
+			<li Class="RFF_Code.DepletableSoil">
+				<terrain>SoilRich</terrain>
+				<replanterDef>Terraform_SoilRich-SoilTilled</replanterDef>
+				<mtbDays>10</mtbDays>
+				<returnToSoilFactor>0.5</returnToSoilFactor>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+
+(More examples can be found in Defs/Terrain_RFF.xml)
+
+- terrain is the TerrainDef created when this one depletes.
+- replanterDef is the ThingDef of the terraform back to the original terrain.
+- mtbDays controls how often, on average, a tile that's continually used will deplete.
+- returnToSoilFactor is a multiplier on the depletion chance if the tile's growing zone is set to return scraps to the dirt. Default is 1.0 - no depletion if this option is on. Lower values are less effective.

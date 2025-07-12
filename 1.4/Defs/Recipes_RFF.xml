@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SplitDirt</defName>
+		<label>separate dirt</label>
+		<description>Separates 1 dirt into 1 sand and 1 clay.</description>
+		<jobString>Separating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PileofDirt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>1</RFFClay>
+			<SandPile>1</SandPile>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PileofDirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>SplitDirtBulk</defName>
+		<label>separate dirt in bulk</label>
+		<description>Separates 5 dirt into 5 sand and 5 clay.</description>
+		<jobString>Separating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PileofDirt</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>5</RFFClay>
+			<SandPile>5</SandPile>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PileofDirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DirtToClay</defName>
+		<label>grind dirt to clay</label>
+		<description>Grind 1 dirt into 2 clay.</description>
+		<jobString>Creating clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PileofDirt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>2</RFFClay>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PileofDirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DirtToClayBulk</defName>
+		<label>grind dirt to clay in bulk</label>
+		<description>Grind 5 dirt into 10 clay.</description>
+		<jobString>Creating clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PileofDirt</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>10</RFFClay>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PileofDirt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCrushedRocks</defName>
+		<label>crush stone chunk</label>
+		<description>Break a stone chunk into 2 crushed rocks.</description>
+		<jobString>Breaking up stone chunk.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CrushedRocks>2</CrushedRocks>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCrushedRocksBulk</defName>
+		<label>crush stone chunks in bulk</label>
+		<description>Break 5 stone chunks into 10 crushed rocks.</description>
+		<jobString>Breaking up stone chunks.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<CrushedRocks>10</CrushedRocks>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCrushedRocksBlock</defName>
+		<label>crush stone blocks</label>
+		<description>Break 10 stone blocks into crushed rocks.</description>
+		<jobString>Breaking up stone blocks.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>300</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneBlocks</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<CrushedRocks>1</CrushedRocks>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCrushedRocksBlockBulk</defName>
+		<label>crush stone blocks in bulk</label>
+		<description>Break 100 stone blocks into 10 crushed rocks.</description>
+		<jobString>Breaking up stone blocks.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneBlocks</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<CrushedRocks>10</CrushedRocks>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeSand</defName>
+		<label>grind rocks into sand</label>
+		<description>Grind up crushed rocks to create 1 sand.</description>
+		<jobString>Making sand.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CrushedRocks</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<SandPile>1</SandPile>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CrushedRocks</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeSandBulk</defName>
+		<label>grind rocks into sand in bulk</label>
+		<description>Grind up 5 crushed rocks to create 5 sand.</description>
+		<jobString>Making sand.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CrushedRocks</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<SandPile>5</SandPile>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CrushedRocks</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeClay</defName>
+		<label>grind sand into clay</label>
+		<description>Grind 1 sand into finer particles to create 1 clay.</description>
+		<jobString>Making clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>1</RFFClay>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SandPile</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeClayBulk</defName>
+		<label>grind sand into clay in bulk</label>
+		<description>Grind 5 sand into finer particles to create 5 clay.</description>
+		<jobString>Making clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFClay>5</RFFClay>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SandPile</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeDirt</defName>
+		<label>create dirt</label>
+		<description>Create 2 dirt from 1 sand, 1 clay, and 1 fertilizer.</description>
+		<jobString>Creating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RFFClay</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Fertilizer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<PileofDirt>2</PileofDirt>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RFFClay</li>
+				<li>SandPile</li>
+				<li>Fertilizer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeDirtBulk</defName>
+		<label>create dirt in bulk</label>
+		<description>Create 10 dirt from 5 sand, 5 clay, and 5 fertilizer.</description>
+		<jobString>Creating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RFFClay</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Fertilizer</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<PileofDirt>10</PileofDirt>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RFFClay</li>
+				<li>SandPile</li>
+				<li>Fertilizer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<!-- <li>RockMill</li> -->
+		</recipeUsers>
+	</RecipeDef>
+
+
+	<RecipeDef>
+		<defName>MakeCompost</defName>
+		<label>make raw compost</label>
+		<description>Make raw compost from organic waste (raw meat and plants).</description>
+		<jobString>Making raw compost.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>250</workAmount>
+		<ingredientValueGetterClass>RFF_Code.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>RottedMush</li>
+						<li>PlantScraps</li>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+				<count>.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RawCompost>1</RawCompost>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+				<li>Kibble</li>
+				<li>Pemmican</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+  		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCompost5</defName>
+		<label>make 5 raw compost</label>
+		<description>Make raw compost from organic waste (raw meat and plants).</description>
+		<jobString>Making raw compost.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.5</workSkillLearnFactor>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>625</workAmount>
+		<ingredientValueGetterClass>RFF_Code.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>RottedMush</li>
+						<li>PlantScraps</li>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RawCompost>5</RawCompost>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+				<li>Kibble</li>
+				<li>Pemmican</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>RottedMush</li>
+				<li>PlantScraps</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+  		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CompostCorpse</defName>
+		<label>burn corpse for compost</label>
+		<description>Cremate a corpse into compost.</description>
+		<jobString>Cremating.</jobString>
+		<workAmount>450</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>RFF_Code.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<RawCompost>5</RawCompost>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+			</specialFiltersToAllow>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CompostCorpseCampfire</defName>
+		<label>burn corpse for compost</label>
+		<description>Cremate a corpse into compost. Less efficient than doing so in a crematorium.</description>
+		<jobString>Cremating.</jobString>
+		<workAmount>1350</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>RFF_Code.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<RawCompost>4</RawCompost>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+			</specialFiltersToAllow>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeBricks</defName>
+		<label>make 12 bricks</label>
+		<description>Mold and fire clay to make bricks.</description>
+		<jobString>Making bricks.</jobString>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>2400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RFFClay</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFBricks>12</RFFBricks>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RFFClay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeFastBricks</defName>
+		<label>make 24 bricks</label>
+		<description>Mold and fire clay to make bricks.</description>
+		<jobString>Making bricks.</jobString>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>3600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RFFClay</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RFFBricks>24</RFFBricks>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RFFClay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+	</RecipeDef>
+</Defs>

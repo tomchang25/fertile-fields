@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignationCategoryDef>
+		<defName>RFF_Adds</defName>
+		<label>terraform</label>
+		<description>Restructure your landscape.</description>
+		<order>242</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>RFF_Code.Designator_Terraform_Stone</li>
+			<li>RFF_Code.Designator_Terraform_RockySoil</li>
+			<li>RFF_Code.Designator_Terraform_Sand</li>
+			<li>RFF_Code.Designator_Terraform_Gravel</li>
+			<li>RFF_Code.Designator_Terraform_PackedDirt</li>
+			<li>RFF_Code.Designator_Terraform_Mud</li>
+			<li>RFF_Code.Designator_Terraform_Soil</li>
+			<li>RFF_Code.Designator_Terraform_MarshySoil</li>
+			<li>RFF_Code.Designator_Terraform_Marsh</li>
+			<li>RFF_Code.Designator_Terraform_WaterShallow</li>
+			<li>RFF_Code.Designator_Terraform_WaterDeep</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>RFF_Farm</defName>
+		<label>farming</label>
+		<description>Improve your farming.</description>
+		<order>221</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_SmoothSurface</li>
+			<li>Designator_RemoveFloor</li>
+			<li>RFF_Code.Designator_Terraform_RichSoil</li>
+			<li>RFF_Code.Designator_Terraform_TilledSoil</li>
+			<li>RFF_Code.Designator_Terraform_Topsoil</li>
+			<li>RFF_Code.Designator_Terraform_RichTopsoil</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_RockyDirt</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Sand</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Gravel</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Soil</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Mud</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_SoilMarshy</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Marsh</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_WaterShallow</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_WaterDeep</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_PackedDirt</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_RoughStone</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_RichSoil</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_TilledSoil</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_Topsoil</defName>
+	</DesignatorDropdownGroupDef>
+		
+	<DesignatorDropdownGroupDef>
+		<defName>SubCategory_RichTopsoil</defName>
+	</DesignatorDropdownGroupDef>
+	
+</Defs>
