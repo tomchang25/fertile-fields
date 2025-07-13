@@ -155,7 +155,7 @@ namespace RFF_Code
             {
                 return null;
             }
-            if (frame.ThingCountNeeded(t.def) > 0)
+            if (!frame.IsCompleted())
             {
                 return null;
             }
@@ -212,7 +212,7 @@ namespace RFF_Code
             {
                 return null;
             }
-            if (frame.ThingCountNeeded(t.def) > 0)
+            if (!frame.IsCompleted())
             {
                 return null;
             }
