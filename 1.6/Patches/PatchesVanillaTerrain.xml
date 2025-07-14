@@ -37,7 +37,7 @@
 			<li>SoilF</li>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TerrainDef[defName = "SoilRich"]/affordances</xpath>
 		<value>
@@ -45,7 +45,15 @@
 			<li>SoilRich</li>
 		</value>
 	</Operation>
-	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName = "Riverbank"]/affordances</xpath>
+		<value>
+			<li>SoilF</li>
+			<li>SoilRich</li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TerrainDef[defName = "PackedDirt"]/affordances</xpath>
 		<value>
@@ -68,7 +76,7 @@
 	</Operation>
 
 	<!-- Water Tiles -->
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -77,7 +85,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -131,8 +139,8 @@
 		<value>
 			<li>WaterDeep</li>
 		</value>
-	</Operation>	
-	
+	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -217,7 +225,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
 		<value>

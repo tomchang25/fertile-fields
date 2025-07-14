@@ -26,6 +26,8 @@ namespace RFF_Code
         {
             if (source.affordances == null || source == target) return false;
 
+            if (source.IsFlood) return false;
+
             foreach (TerraformPath path in paths)
             {
                 if (source.affordances.Contains(path.origin) && path.UseableNow)
@@ -37,6 +39,8 @@ namespace RFF_Code
         public TerraformPath PathFor(TerrainDef source)
         {
             if (source.affordances == null || source == target) return null;
+
+            if (source.IsFlood) return null;
 
             foreach (TerraformPath path in paths)
             {

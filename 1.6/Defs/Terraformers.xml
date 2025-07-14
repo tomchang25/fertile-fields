@@ -1163,6 +1163,12 @@
 				</steps>
 			</li>
 			<li>
+				<origin>SoilRich</origin>
+				<steps>
+					<li>Terraform_SoilRich-SoilRich</li>
+				</steps>
+			</li>
+			<li>
 				<origin>SoilF</origin>
 				<steps>
 					<li>Terraform_SoilF-SoilRich</li>
@@ -1217,12 +1223,6 @@
 				<steps>
 					<li>Terraform_Marsh-SoilF</li>
 					<li>Terraform_SoilF-SoilRich</li>
-				</steps>
-			</li>
-			<li>
-				<origin>Topsoil</origin>
-				<steps>
-					<li>Terraform_Topsoil-DirtFert</li>
 				</steps>
 			</li>
 			<li>
@@ -1416,5 +1416,5 @@
 		</paths>
 		<group>SubCategory_RichTopsoil</group>
 	</RFF_Code.TerraformationDef>
-	
+
 </Defs>

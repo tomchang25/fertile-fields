@@ -1239,6 +1239,25 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RFF_TerraformBase">
+		<defName>Terraform_SoilRich-SoilRich</defName>
+		<label>rich soil</label>
+		<description>Add fertilizer to soil to improve its fertility. Rich soil must be replenished with plant scraps or fertilizer to maintain its quality.\n\nPlace on: any type of fertile soil.\n\nResult: rich soil.</description>
+		<terrainAffordanceNeeded>SoilRich</terrainAffordanceNeeded>
+		<modExtensions>
+			<li Class="RFF_Code.Terraformer">
+				<result>SoilRich</result>
+				<isGrowingJob>true</isGrowingJob>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationCategory>RFF_Farm</designationCategory>
+		<designatorDropdown>SubCategory_RichSoil</designatorDropdown>
+		<uiIconPath>Icons/SoilRich-SoilRich</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="RFF_TerraformBase">
 		<defName>Terraform_SoilRich-SoilTilled</defName>
 		<label>tilled soil</label>
 		<description>Tills rich soil and adds additional fertilizer to maximize its fertility. Tilled soil must be replenished with plant scraps of fertilizer to maintain its quality.\n\nCan be reverted to rich soil with the "Remove Floor" tool.\n\nPlace on: rich soil.\n\nResult: tilled soil.</description>

@@ -30,7 +30,7 @@
 			<Beauty>2</Beauty>
 		</statBases>
 	</TerrainDef>
-	
+
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>RockySoil</defName>
 		<label>rough gravel</label>
@@ -51,7 +51,7 @@
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
-		<takeFootprints>True</takeFootprints> 
+		<takeFootprints>True</takeFootprints>
 		<tools>
 			<li>
 				<label>gravel</label>
@@ -82,7 +82,7 @@
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
-		<takeFootprints>True</takeFootprints> 
+		<takeFootprints>True</takeFootprints>
 		<avoidWander>true</avoidWander>
 		<tools>
 			<li>
@@ -121,7 +121,7 @@
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
-		<takeFootprints>True</takeFootprints> 
+		<takeFootprints>True</takeFootprints>
 		<avoidWander>true</avoidWander>
 		<tools>
 			<li>
@@ -160,7 +160,7 @@
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
-		<takeFootprints>True</takeFootprints> 
+		<takeFootprints>True</takeFootprints>
 		<avoidWander>true</avoidWander>
 		<tools>
 			<li>
@@ -247,7 +247,9 @@
 		<pathCost>5</pathCost>
 		<layerable>true</layerable>
 		<statBases>
-			<Beauty>0</Beauty>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
 			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<scatterType></scatterType>
