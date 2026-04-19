@@ -12,6 +12,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconPath>Stuff/RFF_Wall_Icon_Bricks</uiIconPath>
+		<building>
+			<isAirtight>true</isAirtight>
+		</building>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>125</WorkToBuild>
