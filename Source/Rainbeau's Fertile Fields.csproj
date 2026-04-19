@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>C:\Application\Harmony 2.3.6\net472\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Application\Harmony 2.3.6\net472\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -103,6 +103,7 @@
     <Compile Include="Work_Terraforming.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\..\..\Application\Harmony 2.3.6\net472\0Harmony.dll" />
     <Analyzer Include="E:\Game\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

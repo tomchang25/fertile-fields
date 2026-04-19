@@ -157,7 +157,6 @@ namespace RFF_Code
                 bool adjWater = false;
                 bool adjOcean = false;
                 bool adjRiver = false;
-                bool canBeAdjRiver = map.waterInfo.riverFlowMapBounds.Contains(cell);
 
                 foreach (IntVec3 near in GenAdjFast.AdjacentCells8Way(cell))
                 {
@@ -170,7 +169,7 @@ namespace RFF_Code
                     adjWater = true;
                     //Log.Message("Found water cell at " + near.ToString());
 
-                    if(canBeAdjRiver && terrain.IsRiver)
+                    if (terrain.IsRiver)
                     {
                         adjRiver = true;
                         //Log.Message("Found river cell at " + near.ToString());
