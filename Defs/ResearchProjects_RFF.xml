@@ -16,7 +16,7 @@
 		<label>Terraforming</label>
 		<description>Terraforming represents knowledge of sophisticated irrigation and drainage methods which allow a wide variety of terrain conversions. Sand, marsh, mud or shallow water, for example, can be turned into farmable land. Artificial lakes can be created. And stone floors can be broken up and turned into actual soil.</description>
 		<baseCost>2000</baseCost>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>Stonecutting</li>
 			<li>RFF_Farming</li>
