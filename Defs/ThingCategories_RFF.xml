@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>RFF_TerraformingMaterials</defName>
+		<label>Terraforming Materials</label>
+		<parent>ResourcesRaw</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RFF_CompostingMaterials</defName>
+		<label>Composting Materials</label>
+		<parent>ResourcesRaw</parent>
+	</ThingCategoryDef>
+
+</Defs>

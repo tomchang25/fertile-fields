@@ -1489,4 +1489,135 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
+	<!-- Quarry-style excavation buildings -->
+
+	<ThingDef ParentName="BenchBase">
+		<defName>RFF_ExcavationPit</defName>
+		<label>excavation pit</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>A large open pit where colonists can dig up raw earth resources by hand. Slow but requires no power.</description>
+		<!-- TODO: custom art -->
+		<graphicData>
+			<texPath>Things/Building/Production/TableStonecutter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.10</staticSunShadowHeight>
+		<constructEffect>ConstructDirt</constructEffect>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Steel>20</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.3</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(4,4)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+			<li>RFF_ExcavateClay</li>
+			<li>RFF_ExcavateClayBulk</li>
+			<li>RFF_ExcavateSand</li>
+			<li>RFF_ExcavateSandBulk</li>
+			<li>RFF_ExcavateCrushedRocks</li>
+			<li>RFF_ExcavateCrushedRocksBulk</li>
+		</recipes>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>RFF_Terraforming</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>RFF_PoweredExcavator</defName>
+		<label>powered excavator</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>An industrial powered excavation machine that can dig up raw earth resources much faster than manual labor. Can also excavate dirt, which manual pits cannot.</description>
+		<!-- TODO: custom art -->
+		<graphicData>
+			<texPath>Things/Building/Production/TableStonecutter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(3,3)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+			<li>RFF_ExcavateClay</li>
+			<li>RFF_ExcavateClayBulk</li>
+			<li>RFF_ExcavateSand</li>
+			<li>RFF_ExcavateSandBulk</li>
+			<li>RFF_ExcavateCrushedRocks</li>
+			<li>RFF_ExcavateCrushedRocksBulk</li>
+		</recipes>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>RFF_TerraformingAdvanced</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 </Defs>

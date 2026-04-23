@@ -22,7 +22,7 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_CompostingMaterials</li>
 		</thingCategories>
 		<tradeability>None</tradeability>
 	</ThingDef>
@@ -42,7 +42,7 @@
 			<SellPriceFactor>0.50</SellPriceFactor>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_CompostingMaterials</li>
 		</thingCategories>
 		<tradeTags>
 			<li>TerraformingResources</li>
@@ -63,7 +63,7 @@
 			<Mass>10.0</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_TerraformingMaterials</li>
 		</thingCategories>
 		<tradeTags>
 			<li>TerraformingResources</li>
@@ -84,7 +84,7 @@
 			<Mass>5.0</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_TerraformingMaterials</li>
 		</thingCategories>
 		<tradeTags>
 			<li>TerraformingResources</li>
@@ -105,7 +105,7 @@
 			<Mass>5.0</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_TerraformingMaterials</li>
 		</thingCategories>
 		<tradeTags>
 			<li>TerraformingResources</li>
@@ -126,7 +126,7 @@
 			<Mass>5.0</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_TerraformingMaterials</li>
 		</thingCategories>
 		<tradeTags>
 			<li>TerraformingResources</li>
@@ -186,7 +186,7 @@
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>RFF_CompostingMaterials</li>
 		</thingCategories>
 		<tradeability>None</tradeability>
 	</ThingDef>

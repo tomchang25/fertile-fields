@@ -10,6 +10,32 @@ using UnityEngine;
 
 namespace RFF_Code
 {
+    internal static class TerraformResearchCache
+    {
+        private static ResearchProjectDef cachedTerraforming;
+        private static ResearchProjectDef cachedTerraformingAdvanced;
+
+        public static ResearchProjectDef Terraforming
+        {
+            get
+            {
+                if (cachedTerraforming == null)
+                    cachedTerraforming = DefDatabase<ResearchProjectDef>.GetNamed("RFF_Terraforming");
+                return cachedTerraforming;
+            }
+        }
+
+        public static ResearchProjectDef TerraformingAdvanced
+        {
+            get
+            {
+                if (cachedTerraformingAdvanced == null)
+                    cachedTerraformingAdvanced = DefDatabase<ResearchProjectDef>.GetNamed("RFF_TerraformingAdvanced");
+                return cachedTerraformingAdvanced;
+            }
+        }
+    }
+
     public class JobDriver_ConstructFinishFrameGrowing : JobDriver
     {
         private const int JobEndInterval = 5000;
@@ -88,6 +114,10 @@ namespace RFF_Code
                 Frame frame = this.Frame;
                 actor.skills?.Learn(SkillDefOf.Construction, 0.06f, false);
                 float statValue = actor.GetStatValue(StatDefOf.ConstructionSpeed, true);
+                if (TerraformResearchCache.TerraformingAdvanced.IsFinished)
+                    statValue *= 1.8f;
+                else if (TerraformResearchCache.Terraforming.IsFinished)
+                    statValue *= 1.2f;
                 float workToMake = frame.WorkToBuild;
                 if (actor.Faction == Faction.OfPlayer)
                 {

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Excavation recipes — no input ingredients, Mining skill -->
+
+	<!-- Clay -->
+
+	<RecipeDef>
+		<defName>RFF_ExcavateClay</defName>
+		<label>excavate clay x3</label>
+		<description>Dig up clay from the earth.</description>
+		<jobString>Excavating clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<products>
+			<RFFClay>3</RFFClay>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RFF_ExcavateClayBulk</defName>
+		<label>excavate clay x15</label>
+		<description>Dig up a large amount of clay from the earth.</description>
+		<jobString>Excavating clay.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<products>
+			<RFFClay>15</RFFClay>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<!-- Sand -->
+
+	<RecipeDef>
+		<defName>RFF_ExcavateSand</defName>
+		<label>excavate sand x3</label>
+		<description>Dig up sand from the earth.</description>
+		<jobString>Excavating sand.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<products>
+			<SandPile>3</SandPile>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RFF_ExcavateSandBulk</defName>
+		<label>excavate sand x15</label>
+		<description>Dig up a large amount of sand from the earth.</description>
+		<jobString>Excavating sand.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<products>
+			<SandPile>15</SandPile>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<!-- Crushed Rocks -->
+
+	<RecipeDef>
+		<defName>RFF_ExcavateCrushedRocks</defName>
+		<label>excavate crushed rocks x3</label>
+		<description>Break apart rock deposits into crushed rocks.</description>
+		<jobString>Excavating crushed rocks.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<products>
+			<CrushedRocks>3</CrushedRocks>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RFF_ExcavateCrushedRocksBulk</defName>
+		<label>excavate crushed rocks x15</label>
+		<description>Break apart a large amount of rock deposits into crushed rocks.</description>
+		<jobString>Excavating crushed rocks.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3000</workAmount>
+		<products>
+			<CrushedRocks>15</CrushedRocks>
+		</products>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<!-- Dirt (Powered Excavator only) -->
+
+	<RecipeDef>
+		<defName>RFF_ExcavateDirt</defName>
+		<label>excavate dirt x3</label>
+		<description>Dig up dirt from the earth using powered equipment.</description>
+		<jobString>Excavating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>1200</workAmount>
+		<products>
+			<PileofDirt>3</PileofDirt>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>RFF_PoweredExcavator</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RFF_ExcavateDirtBulk</defName>
+		<label>excavate dirt x15</label>
+		<description>Dig up a large amount of dirt from the earth using powered equipment.</description>
+		<jobString>Excavating dirt.</jobString>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>6000</workAmount>
+		<products>
+			<PileofDirt>15</PileofDirt>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>RFF_PoweredExcavator</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

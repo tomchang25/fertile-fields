@@ -25,4 +25,17 @@
 		<researchViewY>4.25</researchViewY>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>RFF_TerraformingAdvanced</defName>
+		<label>Advanced Terraforming</label>
+		<description>Advanced knowledge of industrial earth-moving techniques. Colonists work significantly faster when terraforming, and gain access to powered excavation equipment for extracting raw earth resources at scale.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>RFF_Terraforming</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4.25</researchViewY>
+	</ResearchProjectDef>
+
 </Defs>
