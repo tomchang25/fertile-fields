@@ -100,6 +100,7 @@
     <Compile Include="TerraformingBuildings.cs" />
     <Compile Include="TerraformingUtility.cs" />
     <Compile Include="WorkGivers_Compost.cs" />
+    <Compile Include="Work_Excavation.cs" />
     <Compile Include="Work_Terraforming.cs" />
   </ItemGroup>
   <ItemGroup>

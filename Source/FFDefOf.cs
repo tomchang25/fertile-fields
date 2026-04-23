@@ -37,6 +37,8 @@ namespace RFF_Code
 
         public static JobDef PlaceNoCostFrame;
 
+        public static JobDef RFF_Excavate;
+
         public static TerrainDef Marsh;
 
         public static TerrainDef MarshyTerrain;

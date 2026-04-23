@@ -1495,21 +1495,12 @@
 		<defName>RFF_ExcavationPit</defName>
 		<label>excavation pit</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>A large open pit where colonists can dig up raw earth resources by hand. Slow but requires no power.</description>
-		<!-- TODO: custom art -->
+		<description>A small pit where colonists can dig up raw earth resources by hand. Slow but requires no power.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/TableStonecutter</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,4)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
+			<texPath>Things/Building/Production/CraftingSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.10</staticSunShadowHeight>
 		<constructEffect>ConstructDirt</constructEffect>
 		<costList>
 			<WoodLog>50</WoodLog>
@@ -1525,23 +1516,20 @@
 			<Cleanliness>-5</Cleanliness>
 			<WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
 		</statBases>
-		<size>(4,4)</size>
+		<size>(1,1)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<recipes>
 			<li>RFF_ExcavateClay</li>
-			<li>RFF_ExcavateClayBulk</li>
 			<li>RFF_ExcavateSand</li>
-			<li>RFF_ExcavateSandBulk</li>
 			<li>RFF_ExcavateCrushedRocks</li>
-			<li>RFF_ExcavateCrushedRocksBulk</li>
 		</recipes>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -1555,12 +1543,11 @@
 		<defName>RFF_PoweredExcavator</defName>
 		<label>powered excavator</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>An industrial powered excavation machine that can dig up raw earth resources much faster than manual labor. Can also excavate dirt, which manual pits cannot.</description>
-		<!-- TODO: custom art -->
+		<description>An industrial powered excavation machine that can dig up raw earth resources much faster than manual labor.</description>
 		<graphicData>
-			<texPath>Things/Building/Production/TableStonecutter</texPath>
+			<texPath>Stuff/TableRockMill</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>(3.5,1.5)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1585,22 +1572,19 @@
 			<Cleanliness>-5</Cleanliness>
 			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
 		</statBases>
-		<size>(3,3)</size>
+		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<recipes>
-			<li>RFF_ExcavateClay</li>
 			<li>RFF_ExcavateClayBulk</li>
-			<li>RFF_ExcavateSand</li>
 			<li>RFF_ExcavateSandBulk</li>
-			<li>RFF_ExcavateCrushedRocks</li>
 			<li>RFF_ExcavateCrushedRocksBulk</li>
 		</recipes>
 		<comps>
@@ -1618,6 +1602,6 @@
 		<researchPrerequisites>
 			<li>RFF_TerraformingAdvanced</li>
 		</researchPrerequisites>
-	</ThingDef>
+  </ThingDef>
 
 </Defs>
