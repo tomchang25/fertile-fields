@@ -140,6 +140,31 @@ namespace RFF_Code
         }
     }
 
+    [StaticConstructorOnStartup]
+    public static class ResourceRebalancer
+    {
+        static ResourceRebalancer()
+        {
+            if (Controller.Settings.rebalancedResources)
+            {
+                ApplyRebalance("PileofDirt", 75, 0.8f);
+                ApplyRebalance("SandPile", 75, 0.8f);
+                ApplyRebalance("RFFClay", 75, 0.8f);
+                ApplyRebalance("CrushedRocks", 75, 1.5f);
+            }
+        }
+
+        private static void ApplyRebalance(string defName, int stackLimit, float mass)
+        {
+            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            if (def != null)
+            {
+                def.stackLimit = stackLimit;
+                def.SetStatBaseValue(StatDefOf.Mass, mass);
+            }
+        }
+    }
+
     public class Settings : ModSettings
     {
         public float depleteChanceMult = 100.5f;
@@ -151,6 +176,7 @@ namespace RFF_Code
         public bool playHardMode = false;
         public bool smartScrapForbidding = true;
 
+        public bool rebalancedResources = false;
         public bool rotProducesMush = true;
 
         public List<DepleteRecordEntry> depleteRecords;// = new List<DepleteRecordEntry>();
@@ -175,6 +201,8 @@ namespace RFF_Code
             //Text.Font = GameFont.Medium;
             //list.Label("RFF.FarmingOptions".Translate());
             Text.Font = GameFont.Small;
+            list.CheckboxLabeled("RFF.RebalancedResources".Translate(), ref rebalancedResources, "RFF.RebalancedResourcesTip".Translate());
+            list.Gap(24);
             list.CheckboxLabeled("RFF.NewGrowZonesRTS".Translate(), ref newGrowZonesRTS, "RFF.NewGrowZonesRTSTip".Translate());
             list.Gap(24);
             list.CheckboxLabeled("RFF.NewGrowZonesDR".Translate(), ref newGrowZonesDR, "RFF.NewGrowZonesDRTip".Translate());
@@ -222,6 +250,7 @@ namespace RFF_Code
             Scribe_Values.Look(ref playHardMode, "playHardMode", false);
             Scribe_Values.Look(ref nonYieldPlantsCanDeplete, "nonYieldPlants", false);
             Scribe_Values.Look(ref smartScrapForbidding, "smartScraps", true);
+            Scribe_Values.Look(ref rebalancedResources, "rebalancedResources", true);
             Scribe_Values.Look(ref rotProducesMush, "rotProducesMush", true);
             Scribe_Values.Look(ref plantScrapsPercent, "plantScrapsPercent", 100.5f);
             Scribe_Values.Look(ref depleteChanceMult, "depleteChance", 100.5f);

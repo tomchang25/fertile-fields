@@ -45,6 +45,10 @@
 
 	<!-- ===== Options ===== -->
 
+	<RFF.RebalancedResources>Rebalanced terraforming resources</RFF.RebalancedResources>
+	<RFF.RebalancedResourcesTip>If checked, dirt, sand, clay, and crushed rocks will stack to 75 and weigh significantly less, comparable to steel. If unchecked, original values are used (stack 25, heavy). Requires a game restart to take effect.</RFF.RebalancedResourcesTip>
+
+
 	<RFF.NewGrowZonesRTS>Default "return to soil" setting</RFF.NewGrowZonesRTS>
 	<RFF.NewGrowZonesRTSTip>If this option is checked, newly created growing zones will default to returning plant scraps to the ground to mitigate soil depletion.\n\nYou can toggle this option for an individual growing zone by selecting it.</RFF.NewGrowZonesRTSTip>
 
