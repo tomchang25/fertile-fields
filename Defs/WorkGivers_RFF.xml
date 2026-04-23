@@ -119,6 +119,24 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
+	<WorkGiverDef>
+		<defName>RFF_DoBillExcavate</defName>
+		<label>excavate</label>
+		<giverClass>RFF_Code.WorkGiver_Excavate</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>50</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RFF_ExcavationPit</li>
+			<li>RFF_PoweredExcavator</li>
+		</fixedBillGiverDefs>
+		<verb>excavate</verb>
+		<gerund>excavating at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 <!--	<WorkGiverDef>
 		<defName>DeliverResourcesToBlueprintsTerraforming</defName>
 		<label>deliver resources to transform terrain</label>

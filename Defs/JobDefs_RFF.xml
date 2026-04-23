@@ -25,4 +25,10 @@
 		<reportString>creating TargetA.</reportString>
 	</JobDef>
 
+	<JobDef>
+		<defName>RFF_Excavate</defName>
+		<driverClass>RFF_Code.JobDriver_Excavate</driverClass>
+		<reportString>excavating at TargetA.</reportString>
+	</JobDef>
+
 </Defs>
