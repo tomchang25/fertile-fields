@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------
   Changelog for "Rainbeau's Fertile Fields"
 ---------------------------------------------------------------------------------
+- 04/23/2025
+	- Add config option to toggle rotted mush generation
+	- Remove D9Ash and convert Fecal Sludge recipes to produce RawCompost directly
+- 04/19/2025
+	- Fixed brick wall info card crash when Odyssey DLC is active.
+	- Fixed water terraforming near rivers not producing moving water.
+	- Changed Terraforming research from Industrial to Medieval tech level.
 - 07/14/2025
 	- Fixed a bug that allow to build on flood tiles.
 	- Added Riverbank support.
