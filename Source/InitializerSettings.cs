@@ -151,6 +151,8 @@ namespace RFF_Code
         public bool playHardMode = false;
         public bool smartScrapForbidding = true;
 
+        public bool rotProducesMush = true;
+
         public List<DepleteRecordEntry> depleteRecords;// = new List<DepleteRecordEntry>();
 
         public const int heightWithoutSpecificDepleteList = 16 * 24 + 36;
@@ -182,6 +184,8 @@ namespace RFF_Code
             list.CheckboxLabeled("RFF.NonYieldPlants".Translate(), ref nonYieldPlantsCanDeplete, "RFF.NonYieldPlantsTip".Translate());
             list.Gap(24);
             list.CheckboxLabeled("RFF.SmartScraps".Translate(), ref smartScrapForbidding, "RFF.SmartScrapsTip".Translate());
+            list.Gap(24);
+            list.CheckboxLabeled("RFF.RotProducesMush".Translate(), ref rotProducesMush, "RFF.RotProducesMushTip".Translate());
             list.Gap(24);
             list.CheckboxLabeled("RFF.PlayHardMode".Translate(), ref playHardMode, "RFF.PlayHardModeTip".Translate());
             list.Gap(24);
@@ -218,6 +222,7 @@ namespace RFF_Code
             Scribe_Values.Look(ref playHardMode, "playHardMode", false);
             Scribe_Values.Look(ref nonYieldPlantsCanDeplete, "nonYieldPlants", false);
             Scribe_Values.Look(ref smartScrapForbidding, "smartScraps", true);
+            Scribe_Values.Look(ref rotProducesMush, "rotProducesMush", true);
             Scribe_Values.Look(ref plantScrapsPercent, "plantScrapsPercent", 100.5f);
             Scribe_Values.Look(ref depleteChanceMult, "depleteChance", 100.5f);
             Scribe_Collections.Look(ref depleteRecords, "depleteRecords", LookMode.Deep);

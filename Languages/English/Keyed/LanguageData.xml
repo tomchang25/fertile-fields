@@ -15,11 +15,11 @@
 	<RFF.HardMode>Not allowed in hard mode</RFF.HardMode>
 	<RFF.Biome>Not allowed on this biome</RFF.Biome>
 	<RFF.HardModeBiome>Not allowed on this biome in hard mode</RFF.HardModeBiome>
-	
+
 	<!-- ===== Mass-Based Recipes ===== -->
 
 	<RFF.BillRequires>Requires {0} kg </RFF.BillRequires>
-	
+
 	<!-- ===== Growing Zones ===== -->
 
 	<RFF.ReturnToSoil>return to soil</RFF.ReturnToSoil>
@@ -44,19 +44,19 @@
 	<RFF.NoComp>Contains no raw compost</RFF.NoComp>
 
 	<!-- ===== Options ===== -->
-	
+
 	<RFF.NewGrowZonesRTS>Default "return to soil" setting</RFF.NewGrowZonesRTS>
 	<RFF.NewGrowZonesRTSTip>If this option is checked, newly created growing zones will default to returning plant scraps to the ground to mitigate soil depletion.\n\nYou can toggle this option for an individual growing zone by selecting it.</RFF.NewGrowZonesRTSTip>
-	
+
 	<RFF.NewGrowZonesDR>Default "replace depleted soil" setting</RFF.NewGrowZonesDR>
 	<RFF.NewGrowZonesDRTip>If this option is checked, newly created growing zones will default to automatically placing blueprints to replace depleted soil.\n\nYou can toggle this option for an individual growing zone by selecting it.</RFF.NewGrowZonesDRTip>
-	
+
 	<RFF.NonYieldPlants>Non-yielding plants deplete soil</RFF.NonYieldPlants>
 	<RFF.NonYieldPlantsTip>If this option is checked, plants that don't yield any useful resources (other than plant scraps) can deplete soil. If it is unchecked, they won't.</RFF.NonYieldPlantsTip>
-	
+
 	<RFF.AutoRecompost>Automatically rebuild compost bins</RFF.AutoRecompost>
 	<RFF.AutoRecompostTip>If this option is checked, when a compost bin finishes making fertilizer, it places a blueprint for a replacement compost bin.</RFF.AutoRecompostTip>
-	
+
 	<RFF.PlayHardMode>Hard Mode</RFF.PlayHardMode>
 	<RFF.PlayHardModeTip>When checked, disables the ability to remove ice on ice sheet and sea ice maps, place mud, marsh, or marshy soil on those maps, and create or remove deep water.</RFF.PlayHardModeTip>
 
@@ -69,21 +69,24 @@
 
 	<RFF.DepleteChance>Soil depletion vulnerability:</RFF.DepleteChance>
 	<RFF.DepleteChanceTip>Multiplies the total rate at which soil depletes by the selected percentage. Richer soils deplete more often, and plants that have been growing longer are more likely to deplete soil.</RFF.DepleteChanceTip>
-	
+
 	<RFF.SpecificDepletes>Specific Soil Depletion Options</RFF.SpecificDepletes>
 	<RFF.SpecificDepleteEntryMTB>{0} base days before depletion (default: {1})</RFF.SpecificDepleteEntryMTB>
 	<RFF.SpecificDepleteEntryMTBTip>The average plant growing time (in days) that passes before the soil depletes. The smaller the value, the more often the soil depletes. Note that plant growing time only accrues during the day, so real times will be about twice as long.</RFF.SpecificDepleteEntryMTBTip>
 	<RFF.SpecificDepleteEntryRTS>{0} return to soil factor (default: {1})</RFF.SpecificDepleteEntryRTS>
 	<RFF.SpecificDepleteEntryRTSTip>The effectiveness of the "return to soil" option for this soil. 0 = no effect, 1 = always effective at stopping this soil from depleting.</RFF.SpecificDepleteEntryRTSTip>
 
+	<RFF.RotProducesMush>Rotting items produce rotted mush</RFF.RotProducesMush>
+	<RFF.RotProducesMushTip>If enabled, food and other organic items that rot will leave behind piles of rotted mush instead of simply disappearing.</RFF.RotProducesMushTip>
+
 	<!-- ===== Deprecated =====
 	<RFF.FarmingOptions>Farming Options:</RFF.FarmingOptions>
-	
+
 	<RFF.TerraformingOptions>General Options:</RFF.TerraformingOptions>
 
 	<RFF.DegradeChancePlowed>Chance for Plowed Soil to Degrade to Rich Soil when Crops are Harvested:</RFF.DegradeChancePlowed>
 	<RFF.DegradeChanceRich>Chance for Rich Soil to Degrade to Normal Soil when Crops are Harvested:</RFF.DegradeChanceRich>
-	
+
 	<RFF.AutoRefertilize>Refertilizing is Automatic.</RFF.AutoRefertilize>
 	<RFF.AutoRefertilizeTip>By default, when rich soil degrades to normal soil, it will automatically be flagged to be refertilized before any new crops are planted. If you prefer to decide for yourself when pawns should refertilize farm tiles (for example, if you don't have a ready supply of fertilizer and don't want your fields sitting idle), uncheck this option.</RFF.AutoRefertilizeTip>
 
@@ -94,5 +97,5 @@
 	<RFF.CompressedMenuTip>By default, the mod compresses the "Terraform" tab of the Architect menu so that the various transformation options that produce any particular end result are grouped as a "sub-menu." If you prefer the older system, where everything is always immediately visible, just unselect this. Note, however, that changes to this setting will not take effect until the game is restarted.</RFF.CompressedMenuTip>
 
 	-->
-	
+
 </LanguageData>

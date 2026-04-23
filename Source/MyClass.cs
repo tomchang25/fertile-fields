@@ -22,7 +22,9 @@ namespace RFF_Code
 			__state = new State (__instance);
 		}
 		static void Postfix(CompRottable __instance, ref State __state) {
-			if (__instance.parent.Destroyed) {
+            if (!Controller.Settings.rotProducesMush) return;
+
+            if (__instance.parent.Destroyed) {
 				if (__instance.parent.def.thingCategories == null) { return; }
 				if (__instance.parent.def.defName.Contains("__Corpse")) { return; }
 				if (__instance.parent.def.defName.Contains("Mizu_")) { return; }
