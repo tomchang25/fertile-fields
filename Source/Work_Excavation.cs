@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
@@ -84,7 +85,7 @@ namespace RFF_Code
             work.PlaySustainerOrSound(() => job.bill.recipe.soundWorking);
             work.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             work.FailOnBurningImmobile(TargetIndex.A);
-            work.FailOn(delegate {
+            work.FailOn((Func<bool>)delegate {
                 CompPowerTrader power = job.GetTarget(TargetIndex.A).Thing.TryGetComp<CompPowerTrader>();
                 return power != null && !power.PowerOn;
             });
