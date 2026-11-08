@@ -135,23 +135,36 @@ namespace RFF_Code
         }
     }
 
-    [HarmonyPatch(typeof(WorkGiver_ConstructDeliverResourcesToBlueprints), "JobOnThing")]
+    [HarmonyPatch(typeof(WorkGiver_ConstructDeliverResourcesToBlueprints))]
     public static class WorkGiver_ConstructDeliverResourcesToBlueprints_JobOnThing
     {
-        static bool Prefix(Thing t, ref Job __result)
+        // Terraforming uses its own Growing and Construction work givers.
+        [HarmonyPrefix]
+        [HarmonyPatch(nameof(WorkGiver_ConstructDeliverResourcesToBlueprints.HasJobOnThing))]
+        static bool HasJobOnThingPrefix(Thing t, ref bool __result)
         {
-            if (t.def?.entityDefToBuild?.GetModExtension<Terraformer>() != null)
-            {
-                __result = null;
-                return false;
-            }
-            return true;
+            if (!IsTerraforming(t))
+                return true;
+
+            __result = false;
+            return false;
         }
 
-        /*static void Postfix(Thing t, ref Job __result)
+        [HarmonyPrefix]
+        [HarmonyPatch(nameof(WorkGiver_ConstructDeliverResourcesToBlueprints.JobOnThing))]
+        static bool JobOnThingPrefix(Thing t, ref Job __result)
         {
-            if (__result != null && t.def.entityDefToBuild?.GetModExtension<Terraformer>() != null) __result = null;
-        }*/
+            if (!IsTerraforming(t))
+                return true;
+
+            __result = null;
+            return false;
+        }
+
+        private static bool IsTerraforming(Thing t)
+        {
+            return t?.def?.entityDefToBuild?.GetModExtension<Terraformer>() != null;
+        }
     }
 
     [HarmonyPatch(typeof(GenConstruct), "HandleBlockingThingJob")]
